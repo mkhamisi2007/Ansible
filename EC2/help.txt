@@ -1,0 +1,8 @@
+# Server :
+ssh-keygen -t rsa
+cat .ssh/id_rsa.pub # copy id
+# Clients:
+nano .ssh/authorized_keys
+# paste id for all computer that need to connect
+# Test connection
+ansible my-node -m ping
