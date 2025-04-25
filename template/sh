@@ -1,0 +1,14 @@
+#!/bin/bash
+touch $1.yaml
+mkdir inventory
+touch inventory/hosts
+mkdir roles
+mkdir roles/$1
+mkdir roles/$1/files
+mkdir roles/$1/vars
+mkdir roles/$1/defaults
+mkdir roles/$1/templates
+mkdir roles/$1/handlers
+mkdir roles/$1/tasks
+touch roles/$1/tasks/main.yaml
+mkdir roles/$1/meta
