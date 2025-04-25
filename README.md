@@ -17,7 +17,7 @@ ansible -m setup -a 'filter=ansible_os_family,ansible_user_id' my-client
 ansible -m apt -a 'name=apache2 state=present' app-servers 
 ansible -m apt -a 'name=apache2 state=present' app-servers --user root
 ansible -m apt -a 'name=ca-certificates state=present' app-servers --useruser1 -b -K
-ansible -m apt -a 'name=apache2 state=absent' my-client
+ansible -m apt -a 'name=apache2 state=absent' my-client 
 ansible-config init --disabled > ansible.cfg
 ansible-playbook -i inventory/hosts myproject.yaml
 ansible-playbook -I inventory/hosts myproject.yaml  -v 
