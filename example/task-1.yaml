@@ -30,5 +30,8 @@
   debug:
     msg: '{{ var01 }}'
   tags: show_var
-
+- name: show message
+  debug:
+    msg: '{{ hostname }}'
+  tags: show_var
 
