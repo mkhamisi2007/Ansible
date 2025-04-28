@@ -1,0 +1,8 @@
+---
+- hosts: app-client
+  vars:
+    myvar: 123
+  vars_files:
+    - var.yaml
+  roles:
+    - sample
