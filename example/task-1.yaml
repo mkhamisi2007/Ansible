@@ -26,4 +26,9 @@
   debug:
     msg: '{{ users[0] }}'
   tags: show_var
+- name: show message
+  debug:
+    msg: '{{ var01 }}'
+  tags: show_var
+
 
