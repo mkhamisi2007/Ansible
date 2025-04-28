@@ -2,7 +2,8 @@
 10.0.13.45 hostname="my-var-client"
 10.0.15.219 hostname="my-var-server"
 
-
 [app-client]
 10.0.13.45
 
+[app-server:vars]
+http-port=80
