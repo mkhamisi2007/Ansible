@@ -5,3 +5,5 @@
 [app-client]
 10.0.13.45
 
+[app-client:vars]
+abc="123"
