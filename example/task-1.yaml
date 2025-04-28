@@ -1,0 +1,24 @@
+- name: install httpd
+  set_fact:
+    package_name: httpd
+    when: ansible_os_family='Redhat'
+- name: install apache
+  set_fact:
+    package_name: apache2
+    when: ansible_os_family='Debian'
+- name: install "{{ package_name }}" package
+  apt:
+    name: '{{ package_name }}'
+    state: present
+- name: show message
+  debug:
+    msg: '{{ myvar }}'
+  tags: show_var
+- name: show message
+  debug:
+    msg: '{{ myvar2 }}'
+  tags: show_var
+- name: show message
+  debug:
+    msg: '{{ student.name }} -  {{ student.family }}'
+  tags: show_var
