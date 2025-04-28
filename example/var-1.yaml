@@ -1,4 +1,10 @@
-myvar2: "1111"
+myvar2: "11111"
 student:
   name: mohammad
   family: khamisi
+user-list: [user1,user2,user3]
+users:
+  - arezzo
+  - masoud
+  - raha
+  - reza
