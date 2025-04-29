@@ -1,0 +1,5 @@
+---
+- import_tasks: install.yaml
+- import_tasks: config.yaml
+
+# برای حالتی که بیش از یک فایل در پوشه تسک داشته باشیم
