@@ -1,7 +1,7 @@
 myvar2: "11111"
 student:
   name: mohammad
-  family: khamisi
+  family: khamisi 
 user-list: [user1,user2,user3]
 users:
   - arezzo
