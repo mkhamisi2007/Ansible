@@ -11,6 +11,6 @@
         state: present
       loop:
         - { username: "alice", shell: "/bin/bash", groups: "sudo" }
-        - { username: "bob", shell: "/bin/zsh", groups: "developers" }
+        - { username: "bob", shell: "/bin/zsh", groups: "developers" } 
         - { username: "charlie", shell: "/bin/sh", groups: "users" }
  
