@@ -4,7 +4,7 @@
   tasks: 
     - name: Add users with groups and shells
       user:
-        name: "{{ item.username }}"
+        name: "{{ item.username }}" 
         shell: "{{ item.shell }}"
         groups: "{{ item.groups }}"
         home: "/home/{{ item.username }}"
