@@ -1,4 +1,4 @@
-- name: Create multiple users with specific groups and shells
+ - name: Create multiple users with specific groups and shells
   hosts: servers
   become: yes
   tasks: 
@@ -13,3 +13,4 @@
         - { username: "alice", shell: "/bin/bash", groups: "sudo" }
         - { username: "bob", shell: "/bin/zsh", groups: "developers" }
         - { username: "charlie", shell: "/bin/sh", groups: "users" }
+ 
