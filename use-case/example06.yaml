@@ -1,7 +1,7 @@
 - name: Create multiple users with specific groups and shells
   hosts: servers
   become: yes
-  tasks:
+  tasks: 
     - name: Add users with groups and shells
       user:
         name: "{{ item.username }}"
