@@ -3,7 +3,7 @@ stages:
 
 deploy_ansible:
   stage: deploy
-  image: python:3.10
+  image: python:3.10 
   script:
     - pip install ansible
     - ansible-playbook -i inventory playbook.yml
