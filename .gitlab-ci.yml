@@ -8,4 +8,4 @@ deploy_ansible:
     - pip install ansible
     - ansible-playbook -i inventory playbook.yml  
   only:
-    - main  # or the branch where you want it to run  
+    - main  # or the branch where you want it to run   
